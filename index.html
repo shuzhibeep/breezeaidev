@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze AI</title>
+    <link rel="icon" type="image/png" href="brzlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #ffffff;
+        }
+
+        .content {
+            text-align: center;
+            padding: 0 40px;
+            max-width: 1000px;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            color: #000000;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 140px;
+            font-weight: 700;
+            letter-spacing: 24px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .tagline {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin-bottom: 100px;
+            opacity: 0.6;
+        }
+
+        .status {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+        }
+
+        .copyright {
+            position: fixed;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            z-index: 1;
+            color: #000000;
+            opacity: 0.4;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 72px;
+                letter-spacing: 16px;
+                margin-bottom: 32px;
+            }
+
+            .tagline {
+                font-size: 10px;
+                letter-spacing: 8px;
+                margin-bottom: 80px;
+            }
+
+            .status {
+                font-size: 14px;
+                letter-spacing: 6px;
+                margin-bottom: 50px;
+            }
+
+            .copyright {
+                font-size: 9px;
+                letter-spacing: 3px;
+                bottom: 30px;
+            }
+
+            .content {
+                padding: 0 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="logo">Breeze</h1>
+            <p class="tagline">Under Construction</p>
+            <p class="status">Please stay calm and refrain from impatience.</p>
+        </div>
+        <div class="copyright">© Copyright 2025 BreezeAI All Rights Reserved.</div>
+    </div>
+</body>
+</html>
